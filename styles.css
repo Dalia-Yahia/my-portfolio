@@ -1,0 +1,363 @@
+/* start general rules */
+* {
+  margin: 0;
+  padding: 0;
+  font-size:11pt;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Handlee', cursive;
+  background-color:#efefef;
+  padding:0.4em;
+  margin: 0.4em;
+}
+
+/* start page container rules */
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head-container {
+  order:1;
+}
+
+.main-words {
+  order: 2;
+}
+
+.Aboutme {
+  order: 3;
+}
+
+.my-skills {
+  order: 4;
+}
+
+.my-works {
+  order: 5;
+}
+
+.follow-me {
+  order: 6;
+}
+.footer {
+  order: 7;
+}
+/* end page container rules */
+
+.head-container,
+.main-words,
+.Aboutme,
+.my-skills,
+.my-works,
+.follow-me {
+  width: 100%;
+  margin: 0.4em;
+  padding: 0.4em;
+  background-color: #fff;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 2px solid #ded7d7;
+}
+
+.head-title2,
+.edu-title,
+.skills-title,
+.work-title {
+  font-size: 12pt;
+  text-decoration: underline;
+  margin-bottom: 0.2em;
+}
+/* end of global rules */
+
+/* start Header rules */
+.head-container {
+  color: rgba(56,53,53,1);
+  border-bottom: 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head-img {
+  width: 15%;
+}
+
+.head-title {
+  width: 85%;
+  text-align: right;
+}
+
+.head-title1 {
+  font-size: 13pt;
+}
+
+.head-title2 {
+  text-decoration: none;
+}
+/* end Header rules */
+
+/* start Main rules */
+.main-words {
+  padding: 0.1em;
+}
+
+.p-main {
+  margin-left: 0.5em;
+}
+/* end Main rules */
+
+/* start content rules */
+/* start AboutMe section */
+.Aboutme {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-img,
+.me,
+.edu-info {
+  width: 100%;
+}
+
+.my-img {
+  order: 1;
+  margin-bottom: 0.3em;
+}
+
+.me {
+  order: 2;
+}
+
+.edu-info {
+  order: 3;
+  margin: 0.3em 0.2em 0.3em 0.2em;
+}
+
+.me {
+  margin-bottom: 0.5em;
+}
+
+.education li {
+  list-style: none;
+}
+/* end AboutMe section */
+
+/* start MySkills section*/
+.skill-label {
+  display: block;
+}
+
+.skill-progress {
+  width: 70%;
+  height: 1em;
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+.skill-progress::-webkit-progress-bar {
+  background:#efefef;
+}
+
+.skill-progress::-webkit-progress-value {
+  background:#3fb6b2;
+}
+
+.skill-progress::-moz-progress-bar {
+  color:#3fb6b2;
+  background:#efefef;
+}
+/* end MySkills section */
+
+/* start MyWorks section */
+.proj-figure {
+  margin: 0.5em;
+  border-bottom: 2px solid #e0e4e4;
+  text-align: center;
+}
+
+.proj-figure:last-child {
+  border: 0;
+}
+
+.project-img {
+  width: 80%;
+}
+
+.links {
+  text-decoration: none;
+  color:inherit;
+}
+
+.links:hover {
+  text-decoration: underline;
+  color: #3fb6b2;
+}
+/* end MyWorks section */
+
+/* start FollowMe section */
+.follow-img {
+  width: 10%;
+}
+/* end FollowMe section */
+
+/* start Footer section */
+.footer {
+  font-size: 9pt;
+}
+/* end Footer section */
+
+/* media queries */
+/*  when the minimum width of screen is 365px*/
+@media screen and (min-width: 365px) {
+  .head-img {
+    width: 10%;
+  }
+
+  .head-title {
+    width: 90%;
+  }
+
+  .fig-container {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .proj-figure {
+    width: 45%;
+    margin-left: 0.5em;
+  }
+}
+
+/* when the minimum width of the screen is 600px */
+@media screen and (min-width: 600px) {
+  .head-img {
+    width: 8%;
+  }
+
+  .head-title {
+    width: 92%;
+  }
+
+  .p-main,
+  .me,
+  .education,
+  .skill-label,
+  .proj-figure {
+    font-size: 13pt;
+  }
+
+  .head-title2,
+  .edu-title,
+  .skills-title,
+  .work-title {
+    font-size: 15pt;
+  }
+
+  .head-title1 {
+    font-size: 17pt;
+  }
+  .img-div {
+    width: 30%;
+  }
+
+  .my-img {
+    height: 100%;
+  }
+
+  .me {
+    width: 68%;
+    margin-left: 0.5em;
+  }
+}
+
+/* when the minimum width of the screen 900px */
+@media screen and (min-width: 900px) {
+
+  .head-img {
+    width: 7%;
+  }
+
+  .head-title {
+    width: 93%;
+  }
+
+  .p-main,
+  .me,
+  .education,
+  .skill-label,
+  .proj-figure {
+    font-size: 14pt;
+  }
+
+  .head-title2,
+  .edu-title,
+  .skills-title,
+  .work-title {
+    font-size: 16pt;
+  }
+
+  .head-title1 {
+    font-size: 18pt;
+  }
+
+  .p-main {
+    text-align: center;
+  }
+
+  .head-container {
+    order:1;
+  }
+
+  .main-words {
+    order: 2;
+  }
+
+  .Aboutme {
+    order: 3;
+  }
+
+  .follow-me {
+    order: 4;
+    width: 20.3%;
+    margin-right: 0.7em;
+  }
+
+  .my-skills {
+    order: 5;
+    width: 77.3%;
+  }
+
+  .my-works {
+    order: 6;
+  }
+
+  .footer {
+    order: 7;
+  }
+
+  .follow-link {
+    display: block;
+    padding: 0.5em 0.5em 0.5em 1em;
+  }
+
+  .follow-img {
+    width: 20%;
+  }
+
+  .proj-figure {
+    width: 31.3%;
+    border: 2px solid #d4cfcf;
+  }
+
+  .proj-figure:last-child {
+    border: 2px solid #d4cfcf;
+  }
+
+  .project-img {
+    margin-top: 1.5em;
+  }
+}
